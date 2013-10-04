@@ -9,6 +9,9 @@ app.get('/', function(request, response) {
       'Content-type': 'text/html; charset=utf-8'
 
   });
+app.get('/about', fuction(req,res){
+  res.send(about.html);
+});
   response.end(HTMLImport);
 }); // <--- here close the function call
 
